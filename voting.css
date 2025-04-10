@@ -95,12 +95,6 @@ header{
     color: rgb(255, 0, 8);
     visibility: hidden;
 }
-
-
-
-
-
-
 .footer{
     background-color: #333;
     color: #fff;
@@ -124,13 +118,115 @@ header{
     .candidate {
       width: calc(50% - 40px);
     }
-    .content-section{
-        flex-direction: column;
+    .content-section {
+      flex-direction: column;
     }
   }
   
   @media (max-width: 480px) {
     .candidate {
       width: 100%;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .container {
+      width: 90%;
+    }
+    .logo {
+      font-size: 2.5em;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    header {
+      padding: 15px 40px;
+    }
+    .logo {
+      font-size: 2.2em;
+    }
+    .navbar a {
+      font-size: 1.2em;
+      margin-left: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 12px 20px;
+    }
+    .logo {
+      font-size: 2em;
+    }
+    .navbar a {
+      font-size: 1em;
+      margin-left: 20px;
+    }
+    .container {
+      width: 95%;
+      margin-top: 10%;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    #candidate {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    header {
+      padding: 10px 15px;
+      flex-direction: column;
+    }
+    .logo {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .navbar a {
+      margin-left: 0;
+      font-size: 0.9em;
+    }
+    .container {
+      margin-top: 25%;
+      padding-top: 20px;
+    }
+    #voting-form {
+      margin-top: 10%;
+    }
+    .footer {
+      height: auto;
+      padding: 15px;
+    }
+    .footer p {
+      font-size: 14px;
+    }
+    .footer a {
+      font-size: 14px;
+      display: block;
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .logo {
+      font-size: 1.5em;
+    }
+    .navbar a {
+      font-size: 0.8em;
+    }
+    .container {
+      margin-top: 30%;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    #vote-btn {
+      padding: 8px 16px;
     }
   }
